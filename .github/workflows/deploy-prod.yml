@@ -1,9 +1,6 @@
 name: Production deployment
 
-on: 
-  push:
-    branches:
-      - master
+on: [workflow_dispatch]
 
 jobs:
   build:
@@ -58,4 +55,4 @@ jobs:
         uses: mattdavis0351/actions/docker-gpr@v1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          image-name: rohitnb-aws-ttt
+          image-name: rohitnb-tictactoe-game-image
