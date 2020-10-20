@@ -1,4 +1,4 @@
-name: Production deployment
+name: Deploy to Cloud
 
 on: [workflow_dispatch]
 
