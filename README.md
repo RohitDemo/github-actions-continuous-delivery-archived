@@ -7,3 +7,15 @@ A simple JavaScript browser based game that uses:
 2. GitHub Node CI workflow from the Actions starter template
 3. AWS SAM/CloudFormation/Lambda for deployment
 
+## YML configs used
+- .github/workflows/node.js.yml: This is a simple CI workflow that 
+  - Runs: `npm ci`, `npm run build` , `npm test` on node versions 10.x, 12.x, 14.x
+  - Triggers: Push to master or when pull request with master
+
+- .github/workflows/deploy-prod.yml: Deploys to cloud (AWS)
+  - Flow: Build & Upload Artifact, Donwload Artifact and push to AWS CloudFormation. (OPT) Pushes a docker image and stores in packages
+  - Triggers: Manual
+
+- .github/aws-config.yml: Defines the S3 Bucket, CloudFormation stackname, region
+
+- sam-template.yml: This is the SAM template that CloudFormation uses to spin up the serverless app. Tells CF where to find the JS file, CSS etc.
