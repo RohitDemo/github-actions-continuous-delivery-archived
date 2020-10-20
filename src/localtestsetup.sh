@@ -1,2 +1,0 @@
-docker build -t docker.pkg.github.com/rohitdemo/tic-tac-toe-demo/rohitnb-tictactoe-game-image:latest .;
-docker run -p 80:80 -d docker.pkg.github.com/rohitdemo/tic-tac-toe-demo/rohitnb-tictactoe-game-image:latest;
