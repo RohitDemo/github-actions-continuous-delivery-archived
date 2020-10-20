@@ -1,4 +1,4 @@
-# Tic Tac Toe Game
+# ✖️ Tic Tac Toe Game  :o:
 
 ![CodeQL](https://github.com/RohitDemo/tic-tac-toe-demo/workflows/CodeQL/badge.svg?branch=master)
 
