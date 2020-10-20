@@ -51,9 +51,11 @@ jobs:
           name: webpack artifacts
           path: public
 
-      - name: Build, Tag, Push
-        uses: mattdavis0351/actions/docker-gpr@v1
+      - uses: azure/docker-login@v1
         with:
-          repo-token: ${{ secrets.REGISTRY_PASSWORD }}
-          image-name: rohitnb-tictactoe-game-image
-          tag: latest
+          login-server: docker.pkg.github.com
+          username: ${{ secrets.REGISTRY_USERNAME }}
+          password: ${{ secrets.REGISTRY_PASSWORD }}
+      - run: |
+          docker build -t docker.pkg.github.com/rohitdemo/tic-tac-toe-demo/rohitnb-tictactoe-game-image:890 .
+          docker push docker.pkg.github.com/rohitdemo/tic-tac-toe-demo/rohitnb-tictactoe-game-image:latest
