@@ -56,3 +56,4 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           image-name: rohitnb-tictactoe-game-image
+          tag: latest
