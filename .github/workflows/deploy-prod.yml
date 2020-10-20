@@ -57,5 +57,5 @@ jobs:
           username: ${{ secrets.REGISTRY_USERNAME }}
           password: ${{ secrets.REGISTRY_PASSWORD }}
       - run: |
-          docker build -t docker.pkg.github.com/rohitdemo/tic-tac-toe-demo/rohitnb-tictactoe-game-image:890 .
+          docker build -t docker.pkg.github.com/rohitdemo/tic-tac-toe-demo/rohitnb-tictactoe-game-image:latest .
           docker push docker.pkg.github.com/rohitdemo/tic-tac-toe-demo/rohitnb-tictactoe-game-image:latest
