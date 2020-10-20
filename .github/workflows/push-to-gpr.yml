@@ -34,6 +34,6 @@ jobs:
       - name: Build, Tag, Push
         uses: mattdavis0351/actions/docker-gpr@master
         with:
-          repo-token: ${{ secrets.REGISTRY_PASSWORD }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
           image-name: rohitnb-tictactoe-game-image
           tag: latest
