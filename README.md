@@ -1,5 +1,11 @@
 # Tic Tac Toe Game
 
+![CodeQL](https://github.com/RohitDemo/tic-tac-toe-demo/workflows/CodeQL/badge.svg?branch=master)
+
+![Continuous Integration workflow](https://github.com/RohitDemo/tic-tac-toe-demo/workflows/Continuous%20Integration%20workflow/badge.svg?branch=master)
+
+![Deploy to Cloud](https://github.com/RohitDemo/tic-tac-toe-demo/workflows/Deploy%20to%20Cloud/badge.svg?branch=master)
+
 <img width="451" alt="Screenshot 2020-10-20 at 8 19 39 AM" src="https://user-images.githubusercontent.com/48172220/96537171-415d1f80-12b3-11eb-9744-4a20f488db04.png">
 
 A simple JavaScript browser based game that uses:
